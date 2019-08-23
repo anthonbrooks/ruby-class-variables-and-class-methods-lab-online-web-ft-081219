@@ -20,8 +20,8 @@ class Song
   end
   
   def self.genres(genre)
-    @@genres << genre unless @@genres.include?(genre)
-    @@genres
+    #@@genres << genre unless @@genres.include?(genre)
+    @@genres.uniq
   end
   
   def self.genre_count
@@ -29,7 +29,7 @@ class Song
   end
   
   def self.artists
-    @@artists
+    @@artists.uniq
   end
   
   def self.artist_count
