@@ -24,6 +24,7 @@ class Song
   end
   
   def self.genre_count
+    genres
     @@genres[@genre] = @@genres.length
   end
   
