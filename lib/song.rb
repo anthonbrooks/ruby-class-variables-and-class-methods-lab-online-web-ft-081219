@@ -19,16 +19,20 @@ class Song
   end
   
   def genres(genre)
-    #@@GENRES << genre unless @@GENRES.include?(genre)
-    @@GENRES.uniq
+    @@genres << genre unless @@genres.include?(genre)
+    @@genres
   end
   
   def genre_count
-    
+    @@genres.count
+  end
+  
+  def artists
+    @@artists
   end
   
   def artist_count
-    
+    @@artists.count  
   end
   
 end
