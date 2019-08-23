@@ -20,7 +20,7 @@ class Song
   
   def genres(genre)
     #@@GENRES << genre unless @@GENRES.include?(genre)
-    @@GENRES
+    @@GENRES.uniq
   end
   
   def genre_count
