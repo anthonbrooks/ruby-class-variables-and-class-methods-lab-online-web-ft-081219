@@ -19,7 +19,7 @@ class Song
   end
   
   def genres(genre)
-    @@GENRES << genre unless @@GENRES.include?(genre)
+    #@@GENRES << genre unless @@GENRES.include?(genre)
     @@GENRES
   end
   
